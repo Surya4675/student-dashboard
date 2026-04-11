@@ -15,7 +15,7 @@ A modern, comprehensive web application built for tracking and analyzing student
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript (Vanilla)
-- **Backend:** Python, FastAPI, Uvicorn (ASGI Server)
+- **Backend:** Python, FastAPI, Uvicorn [ASGI (Asynchronous Server Gateway Interface) Server]
 - **Data Processing:** Pandas
 - **PDF Generation:** xhtml2pdf
 - **Database:** SQLite3
@@ -31,7 +31,7 @@ To run this project locally, ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/student-dashboard.git
+git clone https://github.com/Surya4675/student-dashboard.git
 cd student-dashboard
 ```
 
