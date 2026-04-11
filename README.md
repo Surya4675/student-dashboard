@@ -10,12 +10,14 @@ A modern, comprehensive web application built for tracking and analyzing student
 - **Pass/Fail Ratios:** Quickly visualize the passing vs. failing rate of the entire class.
 - **Semester Trends:** Track average student scores across different semesters.
 - **Detailed Student Search:** Look up an individual student's details, SGPA history, and current CGPA using their Roll Number.
+- **Export Capabilities:** Download individual student transcripts as cleanly formatted PDF and CSV files seamlessly from the dashboard.
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript (Vanilla)
 - **Backend:** Python, FastAPI, Uvicorn (ASGI Server)
 - **Data Processing:** Pandas
+- **PDF Generation:** xhtml2pdf
 - **Database:** SQLite3
 
 ## 📋 Prerequisites
@@ -81,6 +83,8 @@ The backend provides a fully functional REST API. Once the server is running, yo
 - `GET /passfail` - Calculates pass/fail split (Passing criteria: >=40 in all subjcets).
 - `GET /trend` - Evaluates average mark trends per semester.
 - `GET /student/{roll}` - Gets a detailed aggregated report for a specific student.
+- `GET /student/{roll}/export` - Exports an individual student's detailed marks as a CSV file.
+- `GET /student/{roll}/export/pdf` - Exports an individual student's detailed marks as a formatted PDF.
 
 ## 📝 License
 This project is licensed under the MIT License.

@@ -1,6 +1,8 @@
-from fastapi import FastAPI, UploadFile
+from fastapi import FastAPI, UploadFile, Response
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
+from io import BytesIO
+from xhtml2pdf import pisa
 from db import insert_data, conn
 from processor import calculate_sgpa, calculate_cgpa
 
@@ -113,3 +115,60 @@ def student_search(roll: str):
         "sgpa": sgpa_all.to_dict(orient="records"),
         "cgpa": cgpa_value
     }
+
+
+# Student Search Export
+@app.get("/student/{roll}/export")
+def student_export(roll: str):
+    df = pd.read_sql("SELECT * FROM students", conn)
+    student_df = df[df["roll"].astype(str) == str(roll)]
+    if student_df.empty:
+        return {"error": f"Student with Roll No {roll} not found in database."}
+
+    csv_data = student_df.to_csv(index=False)
+    return Response(
+        content=csv_data, 
+        media_type="text/csv", 
+        headers={"Content-Disposition": f"attachment; filename=student_{roll}_marks.csv"}
+    )
+
+
+
+
+def generate_pdf_response(df, title, filename):
+    html = f"""
+    <html>
+    <head>
+        <style>
+            body {{ font-family: Helvetica, Arial, sans-serif; }}
+            h2 {{ text-align: center; color: #333; }}
+            table {{ border-collapse: collapse; width: 100%; font-size: 12px; }}
+            th, td {{ border: 1px solid #ccc; padding: 6px; text-align: center; }}
+            th {{ background-color: #f4f4f4; font-weight: bold; }}
+            tr:nth-child(even) {{ background-color: #f9f9f9; }}
+        </style>
+    </head>
+    <body>
+        <h2>{title}</h2>
+        {df.to_html(index=False)}
+    </body>
+    </html>
+    """
+    result = BytesIO()
+    pisa.pisaDocument(BytesIO(html.encode("UTF-8")), result)
+    return Response(
+        content=result.getvalue(),
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
+
+
+
+# Export Student PDF
+@app.get("/student/{roll}/export/pdf")
+def student_export_pdf(roll: str):
+    df = pd.read_sql("SELECT * FROM students", conn)
+    student_df = df[df["roll"].astype(str) == str(roll)]
+    if student_df.empty:
+        return {"error": f"Student with Roll No {roll} not found in database."}
+    return generate_pdf_response(student_df, f"Student Record - Roll {roll}", f"student_{roll}_marks.pdf")

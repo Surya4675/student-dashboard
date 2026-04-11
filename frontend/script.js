@@ -104,7 +104,11 @@ async function searchStudent() {
 
         resultsDiv.innerHTML = `
             <div style="background: #f8f9fa; padding: 15px 20px; border-radius: 8px; border-left: 5px solid #007bff; display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="margin: 0;">Student: ${name} (Roll: ${roll})</h3>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h3 style="margin: 0;">Student: ${name} (Roll: ${roll})</h3>
+                    <button onclick="window.open('http://127.0.0.1:8000/student/${roll}/export', '_blank')" style="background-color: #28a745; border: none; color: white; border-radius: 4px; padding: 5px 12px; font-size: 13px; margin: 0; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">CSV</button>
+                    <button onclick="window.open('http://127.0.0.1:8000/student/${roll}/export/pdf', '_blank')" style="background-color: #dc3545; border: none; color: white; border-radius: 4px; padding: 5px 12px; font-size: 13px; margin: 0; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">PDF</button>
+                </div>
                 <h3 style="margin: 0;">CGPA: <span style="background: #28a745; color: white; padding: 5px 10px; border-radius: 5px;">${data.cgpa.toFixed(2)}</span></h3>
             </div>
             
