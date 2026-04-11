@@ -1,0 +1,1201 @@
+name,roll,semester,subject,marks
+Student_1,101,1,Math,78
+Student_1,101,1,Physics,50
+Student_1,101,1,Chemistry,76
+Student_1,101,1,Computer Science,73
+Student_1,101,1,English,62
+Student_1,101,2,Math,71
+Student_1,101,2,Physics,60
+Student_1,101,2,Chemistry,62
+Student_1,101,2,Computer Science,58
+Student_1,101,2,English,63
+Student_1,101,3,Math,83
+Student_1,101,3,Physics,73
+Student_1,101,3,Chemistry,60
+Student_1,101,3,Computer Science,72
+Student_1,101,3,English,40
+Student_1,101,4,Math,88
+Student_1,101,4,Physics,75
+Student_1,101,4,Chemistry,63
+Student_1,101,4,Computer Science,70
+Student_1,101,4,English,73
+Student_2,102,1,Math,66
+Student_2,102,1,Physics,92
+Student_2,102,1,Chemistry,88
+Student_2,102,1,Computer Science,97
+Student_2,102,1,English,82
+Student_2,102,2,Math,97
+Student_2,102,2,Physics,73
+Student_2,102,2,Chemistry,55
+Student_2,102,2,Computer Science,44
+Student_2,102,2,English,57
+Student_2,102,3,Math,61
+Student_2,102,3,Physics,59
+Student_2,102,3,Chemistry,82
+Student_2,102,3,Computer Science,41
+Student_2,102,3,English,92
+Student_2,102,4,Math,79
+Student_2,102,4,Physics,90
+Student_2,102,4,Chemistry,88
+Student_2,102,4,Computer Science,59
+Student_2,102,4,English,77
+Student_3,103,1,Math,42
+Student_3,103,1,Physics,98
+Student_3,103,1,Chemistry,75
+Student_3,103,1,Computer Science,97
+Student_3,103,1,English,90
+Student_3,103,2,Math,56
+Student_3,103,2,Physics,57
+Student_3,103,2,Chemistry,59
+Student_3,103,2,Computer Science,68
+Student_3,103,2,English,42
+Student_3,103,3,Math,97
+Student_3,103,3,Physics,49
+Student_3,103,3,Chemistry,94
+Student_3,103,3,Computer Science,45
+Student_3,103,3,English,73
+Student_3,103,4,Math,95
+Student_3,103,4,Physics,68
+Student_3,103,4,Chemistry,68
+Student_3,103,4,Computer Science,78
+Student_3,103,4,English,61
+Student_4,104,1,Math,97
+Student_4,104,1,Physics,56
+Student_4,104,1,Chemistry,78
+Student_4,104,1,Computer Science,62
+Student_4,104,1,English,52
+Student_4,104,2,Math,79
+Student_4,104,2,Physics,90
+Student_4,104,2,Chemistry,92
+Student_4,104,2,Computer Science,86
+Student_4,104,2,English,51
+Student_4,104,3,Math,97
+Student_4,104,3,Physics,52
+Student_4,104,3,Chemistry,43
+Student_4,104,3,Computer Science,76
+Student_4,104,3,English,95
+Student_4,104,4,Math,46
+Student_4,104,4,Physics,100
+Student_4,104,4,Chemistry,71
+Student_4,104,4,Computer Science,48
+Student_4,104,4,English,95
+Student_5,105,1,Math,67
+Student_5,105,1,Physics,43
+Student_5,105,1,Chemistry,78
+Student_5,105,1,Computer Science,68
+Student_5,105,1,English,74
+Student_5,105,2,Math,62
+Student_5,105,2,Physics,87
+Student_5,105,2,Chemistry,87
+Student_5,105,2,Computer Science,65
+Student_5,105,2,English,96
+Student_5,105,3,Math,97
+Student_5,105,3,Physics,47
+Student_5,105,3,Chemistry,48
+Student_5,105,3,Computer Science,89
+Student_5,105,3,English,41
+Student_5,105,4,Math,78
+Student_5,105,4,Physics,76
+Student_5,105,4,Chemistry,66
+Student_5,105,4,Computer Science,75
+Student_5,105,4,English,44
+Student_6,106,1,Math,87
+Student_6,106,1,Physics,87
+Student_6,106,1,Chemistry,44
+Student_6,106,1,Computer Science,79
+Student_6,106,1,English,90
+Student_6,106,2,Math,89
+Student_6,106,2,Physics,63
+Student_6,106,2,Chemistry,55
+Student_6,106,2,Computer Science,54
+Student_6,106,2,English,67
+Student_6,106,3,Math,44
+Student_6,106,3,Physics,53
+Student_6,106,3,Chemistry,75
+Student_6,106,3,Computer Science,60
+Student_6,106,3,English,51
+Student_6,106,4,Math,84
+Student_6,106,4,Physics,55
+Student_6,106,4,Chemistry,68
+Student_6,106,4,Computer Science,43
+Student_6,106,4,English,64
+Student_7,107,1,Math,49
+Student_7,107,1,Physics,43
+Student_7,107,1,Chemistry,89
+Student_7,107,1,Computer Science,84
+Student_7,107,1,English,91
+Student_7,107,2,Math,49
+Student_7,107,2,Physics,16
+Student_7,107,2,Chemistry,46
+Student_7,107,2,Computer Science,71
+Student_7,107,2,English,66
+Student_7,107,3,Math,87
+Student_7,107,3,Physics,89
+Student_7,107,3,Chemistry,68
+Student_7,107,3,Computer Science,72
+Student_7,107,3,English,91
+Student_7,107,4,Math,77
+Student_7,107,4,Physics,76
+Student_7,107,4,Chemistry,19
+Student_7,107,4,Computer Science,77
+Student_7,107,4,English,10
+Student_8,108,1,Math,63
+Student_8,108,1,Physics,91
+Student_8,108,1,Chemistry,94
+Student_8,108,1,Computer Science,61
+Student_8,108,1,English,87
+Student_8,108,2,Math,97
+Student_8,108,2,Physics,99
+Student_8,108,2,Chemistry,86
+Student_8,108,2,Computer Science,78
+Student_8,108,2,English,99
+Student_8,108,3,Math,84
+Student_8,108,3,Physics,54
+Student_8,108,3,Chemistry,100
+Student_8,108,3,Computer Science,62
+Student_8,108,3,English,96
+Student_8,108,4,Math,75
+Student_8,108,4,Physics,86
+Student_8,108,4,Chemistry,57
+Student_8,108,4,Computer Science,49
+Student_8,108,4,English,48
+Student_9,109,1,Math,91
+Student_9,109,1,Physics,99
+Student_9,109,1,Chemistry,85
+Student_9,109,1,Computer Science,75
+Student_9,109,1,English,69
+Student_9,109,2,Math,61
+Student_9,109,2,Physics,84
+Student_9,109,2,Chemistry,40
+Student_9,109,2,Computer Science,93
+Student_9,109,2,English,100
+Student_9,109,3,Math,72
+Student_9,109,3,Physics,67
+Student_9,109,3,Chemistry,54
+Student_9,109,3,Computer Science,86
+Student_9,109,3,English,46
+Student_9,109,4,Math,61
+Student_9,109,4,Physics,87
+Student_9,109,4,Chemistry,67
+Student_9,109,4,Computer Science,50
+Student_9,109,4,English,52
+Student_10,110,1,Math,94
+Student_10,110,1,Physics,55
+Student_10,110,1,Chemistry,97
+Student_10,110,1,Computer Science,86
+Student_10,110,1,English,61
+Student_10,110,2,Math,91
+Student_10,110,2,Physics,86
+Student_10,110,2,Chemistry,82
+Student_10,110,2,Computer Science,66
+Student_10,110,2,English,68
+Student_10,110,3,Math,51
+Student_10,110,3,Physics,50
+Student_10,110,3,Chemistry,79
+Student_10,110,3,Computer Science,92
+Student_10,110,3,English,94
+Student_10,110,4,Math,98
+Student_10,110,4,Physics,79
+Student_10,110,4,Chemistry,67
+Student_10,110,4,Computer Science,74
+Student_10,110,4,English,69
+Student_11,111,1,Math,40
+Student_11,111,1,Physics,59
+Student_11,111,1,Chemistry,96
+Student_11,111,1,Computer Science,57
+Student_11,111,1,English,91
+Student_11,111,2,Math,100
+Student_11,111,2,Physics,69
+Student_11,111,2,Chemistry,100
+Student_11,111,2,Computer Science,89
+Student_11,111,2,English,90
+Student_11,111,3,Math,83
+Student_11,111,3,Physics,54
+Student_11,111,3,Chemistry,51
+Student_11,111,3,Computer Science,50
+Student_11,111,3,English,50
+Student_11,111,4,Math,77
+Student_11,111,4,Physics,96
+Student_11,111,4,Chemistry,98
+Student_11,111,4,Computer Science,100
+Student_11,111,4,English,91
+Student_12,112,1,Math,72
+Student_12,112,1,Physics,87
+Student_12,112,1,Chemistry,81
+Student_12,112,1,Computer Science,83
+Student_12,112,1,English,66
+Student_12,112,2,Math,63
+Student_12,112,2,Physics,96
+Student_12,112,2,Chemistry,57
+Student_12,112,2,Computer Science,44
+Student_12,112,2,English,77
+Student_12,112,3,Math,95
+Student_12,112,3,Physics,95
+Student_12,112,3,Chemistry,40
+Student_12,112,3,Computer Science,43
+Student_12,112,3,English,68
+Student_12,112,4,Math,76
+Student_12,112,4,Physics,95
+Student_12,112,4,Chemistry,74
+Student_12,112,4,Computer Science,92
+Student_12,112,4,English,65
+Student_13,113,1,Math,76
+Student_13,113,1,Physics,85
+Student_13,113,1,Chemistry,70
+Student_13,113,1,Computer Science,64
+Student_13,113,1,English,42
+Student_13,113,2,Math,97
+Student_13,113,2,Physics,59
+Student_13,113,2,Chemistry,69
+Student_13,113,2,Computer Science,54
+Student_13,113,2,English,62
+Student_13,113,3,Math,82
+Student_13,113,3,Physics,94
+Student_13,113,3,Chemistry,53
+Student_13,113,3,Computer Science,76
+Student_13,113,3,English,48
+Student_13,113,4,Math,95
+Student_13,113,4,Physics,41
+Student_13,113,4,Chemistry,41
+Student_13,113,4,Computer Science,90
+Student_13,113,4,English,80
+Student_14,114,1,Math,55
+Student_14,114,1,Physics,88
+Student_14,114,1,Chemistry,70
+Student_14,114,1,Computer Science,69
+Student_14,114,1,English,55
+Student_14,114,2,Math,56
+Student_14,114,2,Physics,75
+Student_14,114,2,Chemistry,50
+Student_14,114,2,Computer Science,85
+Student_14,114,2,English,67
+Student_14,114,3,Math,53
+Student_14,114,3,Physics,47
+Student_14,114,3,Chemistry,60
+Student_14,114,3,Computer Science,50
+Student_14,114,3,English,96
+Student_14,114,4,Math,69
+Student_14,114,4,Physics,60
+Student_14,114,4,Chemistry,62
+Student_14,114,4,Computer Science,58
+Student_14,114,4,English,48
+Student_15,115,1,Math,49
+Student_15,115,1,Physics,41
+Student_15,115,1,Chemistry,87
+Student_15,115,1,Computer Science,40
+Student_15,115,1,English,70
+Student_15,115,2,Math,68
+Student_15,115,2,Physics,60
+Student_15,115,2,Chemistry,51
+Student_15,115,2,Computer Science,89
+Student_15,115,2,English,44
+Student_15,115,3,Math,90
+Student_15,115,3,Physics,49
+Student_15,115,3,Chemistry,69
+Student_15,115,3,Computer Science,68
+Student_15,115,3,English,92
+Student_15,115,4,Math,60
+Student_15,115,4,Physics,95
+Student_15,115,4,Chemistry,57
+Student_15,115,4,Computer Science,59
+Student_15,115,4,English,81
+Student_16,116,1,Math,64
+Student_16,116,1,Physics,57
+Student_16,116,1,Chemistry,82
+Student_16,116,1,Computer Science,70
+Student_16,116,1,English,53
+Student_16,116,2,Math,45
+Student_16,116,2,Physics,42
+Student_16,116,2,Chemistry,92
+Student_16,116,2,Computer Science,55
+Student_16,116,2,English,70
+Student_16,116,3,Math,90
+Student_16,116,3,Physics,46
+Student_16,116,3,Chemistry,69
+Student_16,116,3,Computer Science,58
+Student_16,116,3,English,73
+Student_16,116,4,Math,98
+Student_16,116,4,Physics,61
+Student_16,116,4,Chemistry,77
+Student_16,116,4,Computer Science,83
+Student_16,116,4,English,100
+Student_17,117,1,Math,68
+Student_17,117,1,Physics,74
+Student_17,117,1,Chemistry,40
+Student_17,117,1,Computer Science,42
+Student_17,117,1,English,80
+Student_17,117,2,Math,99
+Student_17,117,2,Physics,84
+Student_17,117,2,Chemistry,72
+Student_17,117,2,Computer Science,56
+Student_17,117,2,English,80
+Student_17,117,3,Math,83
+Student_17,117,3,Physics,47
+Student_17,117,3,Chemistry,66
+Student_17,117,3,Computer Science,78
+Student_17,117,3,English,46
+Student_17,117,4,Math,85
+Student_17,117,4,Physics,94
+Student_17,117,4,Chemistry,46
+Student_17,117,4,Computer Science,78
+Student_17,117,4,English,71
+Student_18,118,1,Math,94
+Student_18,118,1,Physics,84
+Student_18,118,1,Chemistry,79
+Student_18,118,1,Computer Science,85
+Student_18,118,1,English,62
+Student_18,118,2,Math,42
+Student_18,118,2,Physics,93
+Student_18,118,2,Chemistry,72
+Student_18,118,2,Computer Science,70
+Student_18,118,2,English,79
+Student_18,118,3,Math,56
+Student_18,118,3,Physics,75
+Student_18,118,3,Chemistry,68
+Student_18,118,3,Computer Science,75
+Student_18,118,3,English,64
+Student_18,118,4,Math,90
+Student_18,118,4,Physics,94
+Student_18,118,4,Chemistry,80
+Student_18,118,4,Computer Science,83
+Student_18,118,4,English,47
+Student_19,119,1,Math,57
+Student_19,119,1,Physics,54
+Student_19,119,1,Chemistry,74
+Student_19,119,1,Computer Science,76
+Student_19,119,1,English,69
+Student_19,119,2,Math,42
+Student_19,119,2,Physics,86
+Student_19,119,2,Chemistry,70
+Student_19,119,2,Computer Science,61
+Student_19,119,2,English,79
+Student_19,119,3,Math,68
+Student_19,119,3,Physics,99
+Student_19,119,3,Chemistry,57
+Student_19,119,3,Computer Science,94
+Student_19,119,3,English,68
+Student_19,119,4,Math,91
+Student_19,119,4,Physics,66
+Student_19,119,4,Chemistry,87
+Student_19,119,4,Computer Science,50
+Student_19,119,4,English,90
+Student_20,120,1,Math,49
+Student_20,120,1,Physics,62
+Student_20,120,1,Chemistry,81
+Student_20,120,1,Computer Science,52
+Student_20,120,1,English,26
+Student_20,120,2,Math,18
+Student_20,120,2,Physics,29
+Student_20,120,2,Chemistry,57
+Student_20,120,2,Computer Science,77
+Student_20,120,2,English,15
+Student_20,120,3,Math,97
+Student_20,120,3,Physics,45
+Student_20,120,3,Chemistry,76
+Student_20,120,3,Computer Science,18
+Student_20,120,3,English,44
+Student_20,120,4,Math,50
+Student_20,120,4,Physics,44
+Student_20,120,4,Chemistry,82
+Student_20,120,4,Computer Science,79
+Student_20,120,4,English,27
+Student_21,121,1,Math,71
+Student_21,121,1,Physics,47
+Student_21,121,1,Chemistry,87
+Student_21,121,1,Computer Science,87
+Student_21,121,1,English,43
+Student_21,121,2,Math,99
+Student_21,121,2,Physics,80
+Student_21,121,2,Chemistry,46
+Student_21,121,2,Computer Science,87
+Student_21,121,2,English,51
+Student_21,121,3,Math,43
+Student_21,121,3,Physics,59
+Student_21,121,3,Chemistry,52
+Student_21,121,3,Computer Science,66
+Student_21,121,3,English,87
+Student_21,121,4,Math,50
+Student_21,121,4,Physics,66
+Student_21,121,4,Chemistry,99
+Student_21,121,4,Computer Science,98
+Student_21,121,4,English,99
+Student_22,122,1,Math,54
+Student_22,122,1,Physics,50
+Student_22,122,1,Chemistry,65
+Student_22,122,1,Computer Science,73
+Student_22,122,1,English,74
+Student_22,122,2,Math,56
+Student_22,122,2,Physics,53
+Student_22,122,2,Chemistry,99
+Student_22,122,2,Computer Science,50
+Student_22,122,2,English,97
+Student_22,122,3,Math,62
+Student_22,122,3,Physics,73
+Student_22,122,3,Chemistry,65
+Student_22,122,3,Computer Science,41
+Student_22,122,3,English,43
+Student_22,122,4,Math,99
+Student_22,122,4,Physics,67
+Student_22,122,4,Chemistry,63
+Student_22,122,4,Computer Science,58
+Student_22,122,4,English,78
+Student_23,123,1,Math,75
+Student_23,123,1,Physics,38
+Student_23,123,1,Chemistry,49
+Student_23,123,1,Computer Science,90
+Student_23,123,1,English,34
+Student_23,123,2,Math,95
+Student_23,123,2,Physics,46
+Student_23,123,2,Chemistry,62
+Student_23,123,2,Computer Science,75
+Student_23,123,2,English,92
+Student_23,123,3,Math,52
+Student_23,123,3,Physics,74
+Student_23,123,3,Chemistry,45
+Student_23,123,3,Computer Science,31
+Student_23,123,3,English,49
+Student_23,123,4,Math,90
+Student_23,123,4,Physics,83
+Student_23,123,4,Chemistry,93
+Student_23,123,4,Computer Science,45
+Student_23,123,4,English,97
+Student_24,124,1,Math,61
+Student_24,124,1,Physics,32
+Student_24,124,1,Chemistry,60
+Student_24,124,1,Computer Science,94
+Student_24,124,1,English,17
+Student_24,124,2,Math,79
+Student_24,124,2,Physics,73
+Student_24,124,2,Chemistry,47
+Student_24,124,2,Computer Science,39
+Student_24,124,2,English,47
+Student_24,124,3,Math,43
+Student_24,124,3,Physics,81
+Student_24,124,3,Chemistry,85
+Student_24,124,3,Computer Science,24
+Student_24,124,3,English,67
+Student_24,124,4,Math,100
+Student_24,124,4,Physics,59
+Student_24,124,4,Chemistry,91
+Student_24,124,4,Computer Science,23
+Student_24,124,4,English,73
+Student_25,125,1,Math,100
+Student_25,125,1,Physics,74
+Student_25,125,1,Chemistry,44
+Student_25,125,1,Computer Science,78
+Student_25,125,1,English,90
+Student_25,125,2,Math,55
+Student_25,125,2,Physics,75
+Student_25,125,2,Chemistry,73
+Student_25,125,2,Computer Science,81
+Student_25,125,2,English,79
+Student_25,125,3,Math,76
+Student_25,125,3,Physics,92
+Student_25,125,3,Chemistry,94
+Student_25,125,3,Computer Science,66
+Student_25,125,3,English,77
+Student_25,125,4,Math,73
+Student_25,125,4,Physics,98
+Student_25,125,4,Chemistry,88
+Student_25,125,4,Computer Science,79
+Student_25,125,4,English,58
+Student_26,126,1,Math,95
+Student_26,126,1,Physics,55
+Student_26,126,1,Chemistry,96
+Student_26,126,1,Computer Science,87
+Student_26,126,1,English,75
+Student_26,126,2,Math,76
+Student_26,126,2,Physics,76
+Student_26,126,2,Chemistry,92
+Student_26,126,2,Computer Science,74
+Student_26,126,2,English,76
+Student_26,126,3,Math,28
+Student_26,126,3,Physics,81
+Student_26,126,3,Chemistry,31
+Student_26,126,3,Computer Science,17
+Student_26,126,3,English,92
+Student_26,126,4,Math,81
+Student_26,126,4,Physics,46
+Student_26,126,4,Chemistry,18
+Student_26,126,4,Computer Science,80
+Student_26,126,4,English,20
+Student_27,127,1,Math,83
+Student_27,127,1,Physics,47
+Student_27,127,1,Chemistry,73
+Student_27,127,1,Computer Science,84
+Student_27,127,1,English,99
+Student_27,127,2,Math,94
+Student_27,127,2,Physics,49
+Student_27,127,2,Chemistry,41
+Student_27,127,2,Computer Science,86
+Student_27,127,2,English,72
+Student_27,127,3,Math,40
+Student_27,127,3,Physics,90
+Student_27,127,3,Chemistry,80
+Student_27,127,3,Computer Science,96
+Student_27,127,3,English,83
+Student_27,127,4,Math,82
+Student_27,127,4,Physics,45
+Student_27,127,4,Chemistry,96
+Student_27,127,4,Computer Science,56
+Student_27,127,4,English,68
+Student_28,128,1,Math,54
+Student_28,128,1,Physics,63
+Student_28,128,1,Chemistry,97
+Student_28,128,1,Computer Science,50
+Student_28,128,1,English,87
+Student_28,128,2,Math,73
+Student_28,128,2,Physics,42
+Student_28,128,2,Chemistry,59
+Student_28,128,2,Computer Science,56
+Student_28,128,2,English,61
+Student_28,128,3,Math,66
+Student_28,128,3,Physics,62
+Student_28,128,3,Chemistry,57
+Student_28,128,3,Computer Science,63
+Student_28,128,3,English,52
+Student_28,128,4,Math,55
+Student_28,128,4,Physics,71
+Student_28,128,4,Chemistry,48
+Student_28,128,4,Computer Science,57
+Student_28,128,4,English,59
+Student_29,129,1,Math,97
+Student_29,129,1,Physics,53
+Student_29,129,1,Chemistry,66
+Student_29,129,1,Computer Science,47
+Student_29,129,1,English,83
+Student_29,129,2,Math,73
+Student_29,129,2,Physics,62
+Student_29,129,2,Chemistry,51
+Student_29,129,2,Computer Science,56
+Student_29,129,2,English,75
+Student_29,129,3,Math,97
+Student_29,129,3,Physics,77
+Student_29,129,3,Chemistry,62
+Student_29,129,3,Computer Science,81
+Student_29,129,3,English,64
+Student_29,129,4,Math,56
+Student_29,129,4,Physics,77
+Student_29,129,4,Chemistry,53
+Student_29,129,4,Computer Science,61
+Student_29,129,4,English,66
+Student_30,130,1,Math,82
+Student_30,130,1,Physics,48
+Student_30,130,1,Chemistry,49
+Student_30,130,1,Computer Science,56
+Student_30,130,1,English,89
+Student_30,130,2,Math,44
+Student_30,130,2,Physics,42
+Student_30,130,2,Chemistry,67
+Student_30,130,2,Computer Science,85
+Student_30,130,2,English,69
+Student_30,130,3,Math,66
+Student_30,130,3,Physics,100
+Student_30,130,3,Chemistry,73
+Student_30,130,3,Computer Science,60
+Student_30,130,3,English,81
+Student_30,130,4,Math,56
+Student_30,130,4,Physics,92
+Student_30,130,4,Chemistry,70
+Student_30,130,4,Computer Science,51
+Student_30,130,4,English,63
+Student_31,131,1,Math,60
+Student_31,131,1,Physics,71
+Student_31,131,1,Chemistry,91
+Student_31,131,1,Computer Science,69
+Student_31,131,1,English,78
+Student_31,131,2,Math,99
+Student_31,131,2,Physics,92
+Student_31,131,2,Chemistry,71
+Student_31,131,2,Computer Science,60
+Student_31,131,2,English,95
+Student_31,131,3,Math,85
+Student_31,131,3,Physics,99
+Student_31,131,3,Chemistry,71
+Student_31,131,3,Computer Science,45
+Student_31,131,3,English,83
+Student_31,131,4,Math,63
+Student_31,131,4,Physics,65
+Student_31,131,4,Chemistry,41
+Student_31,131,4,Computer Science,43
+Student_31,131,4,English,81
+Student_32,132,1,Math,57
+Student_32,132,1,Physics,75
+Student_32,132,1,Chemistry,46
+Student_32,132,1,Computer Science,100
+Student_32,132,1,English,50
+Student_32,132,2,Math,56
+Student_32,132,2,Physics,53
+Student_32,132,2,Chemistry,41
+Student_32,132,2,Computer Science,62
+Student_32,132,2,English,75
+Student_32,132,3,Math,48
+Student_32,132,3,Physics,52
+Student_32,132,3,Chemistry,61
+Student_32,132,3,Computer Science,69
+Student_32,132,3,English,88
+Student_32,132,4,Math,99
+Student_32,132,4,Physics,62
+Student_32,132,4,Chemistry,91
+Student_32,132,4,Computer Science,42
+Student_32,132,4,English,85
+Student_33,133,1,Math,63
+Student_33,133,1,Physics,99
+Student_33,133,1,Chemistry,28
+Student_33,133,1,Computer Science,55
+Student_33,133,1,English,42
+Student_33,133,2,Math,59
+Student_33,133,2,Physics,68
+Student_33,133,2,Chemistry,48
+Student_33,133,2,Computer Science,54
+Student_33,133,2,English,61
+Student_33,133,3,Math,59
+Student_33,133,3,Physics,85
+Student_33,133,3,Chemistry,91
+Student_33,133,3,Computer Science,54
+Student_33,133,3,English,86
+Student_33,133,4,Math,76
+Student_33,133,4,Physics,29
+Student_33,133,4,Chemistry,16
+Student_33,133,4,Computer Science,27
+Student_33,133,4,English,19
+Student_34,134,1,Math,99
+Student_34,134,1,Physics,81
+Student_34,134,1,Chemistry,99
+Student_34,134,1,Computer Science,81
+Student_34,134,1,English,77
+Student_34,134,2,Math,72
+Student_34,134,2,Physics,51
+Student_34,134,2,Chemistry,86
+Student_34,134,2,Computer Science,40
+Student_34,134,2,English,51
+Student_34,134,3,Math,82
+Student_34,134,3,Physics,53
+Student_34,134,3,Chemistry,83
+Student_34,134,3,Computer Science,98
+Student_34,134,3,English,54
+Student_34,134,4,Math,96
+Student_34,134,4,Physics,61
+Student_34,134,4,Chemistry,91
+Student_34,134,4,Computer Science,86
+Student_34,134,4,English,59
+Student_35,135,1,Math,62
+Student_35,135,1,Physics,99
+Student_35,135,1,Chemistry,49
+Student_35,135,1,Computer Science,87
+Student_35,135,1,English,68
+Student_35,135,2,Math,82
+Student_35,135,2,Physics,67
+Student_35,135,2,Chemistry,68
+Student_35,135,2,Computer Science,72
+Student_35,135,2,English,97
+Student_35,135,3,Math,62
+Student_35,135,3,Physics,53
+Student_35,135,3,Chemistry,97
+Student_35,135,3,Computer Science,56
+Student_35,135,3,English,97
+Student_35,135,4,Math,57
+Student_35,135,4,Physics,83
+Student_35,135,4,Chemistry,43
+Student_35,135,4,Computer Science,97
+Student_35,135,4,English,44
+Student_36,136,1,Math,82
+Student_36,136,1,Physics,76
+Student_36,136,1,Chemistry,93
+Student_36,136,1,Computer Science,46
+Student_36,136,1,English,87
+Student_36,136,2,Math,63
+Student_36,136,2,Physics,53
+Student_36,136,2,Chemistry,91
+Student_36,136,2,Computer Science,96
+Student_36,136,2,English,56
+Student_36,136,3,Math,63
+Student_36,136,3,Physics,93
+Student_36,136,3,Chemistry,96
+Student_36,136,3,Computer Science,85
+Student_36,136,3,English,42
+Student_36,136,4,Math,44
+Student_36,136,4,Physics,70
+Student_36,136,4,Chemistry,84
+Student_36,136,4,Computer Science,60
+Student_36,136,4,English,59
+Student_37,137,1,Math,61
+Student_37,137,1,Physics,66
+Student_37,137,1,Chemistry,64
+Student_37,137,1,Computer Science,90
+Student_37,137,1,English,75
+Student_37,137,2,Math,57
+Student_37,137,2,Physics,67
+Student_37,137,2,Chemistry,92
+Student_37,137,2,Computer Science,55
+Student_37,137,2,English,58
+Student_37,137,3,Math,63
+Student_37,137,3,Physics,80
+Student_37,137,3,Chemistry,51
+Student_37,137,3,Computer Science,92
+Student_37,137,3,English,95
+Student_37,137,4,Math,65
+Student_37,137,4,Physics,86
+Student_37,137,4,Chemistry,53
+Student_37,137,4,Computer Science,88
+Student_37,137,4,English,87
+Student_38,138,1,Math,91
+Student_38,138,1,Physics,65
+Student_38,138,1,Chemistry,66
+Student_38,138,1,Computer Science,54
+Student_38,138,1,English,78
+Student_38,138,2,Math,81
+Student_38,138,2,Physics,79
+Student_38,138,2,Chemistry,85
+Student_38,138,2,Computer Science,51
+Student_38,138,2,English,81
+Student_38,138,3,Math,54
+Student_38,138,3,Physics,63
+Student_38,138,3,Chemistry,75
+Student_38,138,3,Computer Science,69
+Student_38,138,3,English,43
+Student_38,138,4,Math,79
+Student_38,138,4,Physics,52
+Student_38,138,4,Chemistry,66
+Student_38,138,4,Computer Science,63
+Student_38,138,4,English,54
+Student_39,139,1,Math,92
+Student_39,139,1,Physics,75
+Student_39,139,1,Chemistry,92
+Student_39,139,1,Computer Science,82
+Student_39,139,1,English,60
+Student_39,139,2,Math,90
+Student_39,139,2,Physics,48
+Student_39,139,2,Chemistry,73
+Student_39,139,2,Computer Science,98
+Student_39,139,2,English,44
+Student_39,139,3,Math,79
+Student_39,139,3,Physics,49
+Student_39,139,3,Chemistry,58
+Student_39,139,3,Computer Science,91
+Student_39,139,3,English,98
+Student_39,139,4,Math,81
+Student_39,139,4,Physics,44
+Student_39,139,4,Chemistry,50
+Student_39,139,4,Computer Science,57
+Student_39,139,4,English,75
+Student_40,140,1,Math,75
+Student_40,140,1,Physics,59
+Student_40,140,1,Chemistry,91
+Student_40,140,1,Computer Science,65
+Student_40,140,1,English,82
+Student_40,140,2,Math,97
+Student_40,140,2,Physics,74
+Student_40,140,2,Chemistry,75
+Student_40,140,2,Computer Science,99
+Student_40,140,2,English,50
+Student_40,140,3,Math,16
+Student_40,140,3,Physics,60
+Student_40,140,3,Chemistry,31
+Student_40,140,3,Computer Science,100
+Student_40,140,3,English,99
+Student_40,140,4,Math,43
+Student_40,140,4,Physics,96
+Student_40,140,4,Chemistry,63
+Student_40,140,4,Computer Science,62
+Student_40,140,4,English,78
+Student_41,141,1,Math,48
+Student_41,141,1,Physics,40
+Student_41,141,1,Chemistry,32
+Student_41,141,1,Computer Science,69
+Student_41,141,1,English,79
+Student_41,141,2,Math,78
+Student_41,141,2,Physics,91
+Student_41,141,2,Chemistry,89
+Student_41,141,2,Computer Science,53
+Student_41,141,2,English,93
+Student_41,141,3,Math,11
+Student_41,141,3,Physics,87
+Student_41,141,3,Chemistry,62
+Student_41,141,3,Computer Science,50
+Student_41,141,3,English,48
+Student_41,141,4,Math,73
+Student_41,141,4,Physics,73
+Student_41,141,4,Chemistry,76
+Student_41,141,4,Computer Science,64
+Student_41,141,4,English,65
+Student_42,142,1,Math,40
+Student_42,142,1,Physics,75
+Student_42,142,1,Chemistry,69
+Student_42,142,1,Computer Science,80
+Student_42,142,1,English,13
+Student_42,142,2,Math,95
+Student_42,142,2,Physics,34
+Student_42,142,2,Chemistry,51
+Student_42,142,2,Computer Science,75
+Student_42,142,2,English,64
+Student_42,142,3,Math,50
+Student_42,142,3,Physics,65
+Student_42,142,3,Chemistry,19
+Student_42,142,3,Computer Science,44
+Student_42,142,3,English,60
+Student_42,142,4,Math,51
+Student_42,142,4,Physics,64
+Student_42,142,4,Chemistry,83
+Student_42,142,4,Computer Science,89
+Student_42,142,4,English,93
+Student_43,143,1,Math,49
+Student_43,143,1,Physics,77
+Student_43,143,1,Chemistry,46
+Student_43,143,1,Computer Science,62
+Student_43,143,1,English,56
+Student_43,143,2,Math,76
+Student_43,143,2,Physics,58
+Student_43,143,2,Chemistry,76
+Student_43,143,2,Computer Science,55
+Student_43,143,2,English,70
+Student_43,143,3,Math,61
+Student_43,143,3,Physics,85
+Student_43,143,3,Chemistry,75
+Student_43,143,3,Computer Science,57
+Student_43,143,3,English,97
+Student_43,143,4,Math,98
+Student_43,143,4,Physics,77
+Student_43,143,4,Chemistry,46
+Student_43,143,4,Computer Science,82
+Student_43,143,4,English,80
+Student_44,144,1,Math,89
+Student_44,144,1,Physics,97
+Student_44,144,1,Chemistry,91
+Student_44,144,1,Computer Science,66
+Student_44,144,1,English,55
+Student_44,144,2,Math,91
+Student_44,144,2,Physics,69
+Student_44,144,2,Chemistry,79
+Student_44,144,2,Computer Science,56
+Student_44,144,2,English,69
+Student_44,144,3,Math,98
+Student_44,144,3,Physics,45
+Student_44,144,3,Chemistry,46
+Student_44,144,3,Computer Science,51
+Student_44,144,3,English,52
+Student_44,144,4,Math,59
+Student_44,144,4,Physics,76
+Student_44,144,4,Chemistry,57
+Student_44,144,4,Computer Science,51
+Student_44,144,4,English,65
+Student_45,145,1,Math,85
+Student_45,145,1,Physics,94
+Student_45,145,1,Chemistry,98
+Student_45,145,1,Computer Science,48
+Student_45,145,1,English,86
+Student_45,145,2,Math,95
+Student_45,145,2,Physics,87
+Student_45,145,2,Chemistry,60
+Student_45,145,2,Computer Science,58
+Student_45,145,2,English,51
+Student_45,145,3,Math,95
+Student_45,145,3,Physics,53
+Student_45,145,3,Chemistry,78
+Student_45,145,3,Computer Science,92
+Student_45,145,3,English,41
+Student_45,145,4,Math,46
+Student_45,145,4,Physics,48
+Student_45,145,4,Chemistry,58
+Student_45,145,4,Computer Science,71
+Student_45,145,4,English,56
+Student_46,146,1,Math,56
+Student_46,146,1,Physics,86
+Student_46,146,1,Chemistry,63
+Student_46,146,1,Computer Science,81
+Student_46,146,1,English,65
+Student_46,146,2,Math,41
+Student_46,146,2,Physics,100
+Student_46,146,2,Chemistry,51
+Student_46,146,2,Computer Science,89
+Student_46,146,2,English,49
+Student_46,146,3,Math,87
+Student_46,146,3,Physics,41
+Student_46,146,3,Chemistry,71
+Student_46,146,3,Computer Science,50
+Student_46,146,3,English,43
+Student_46,146,4,Math,41
+Student_46,146,4,Physics,80
+Student_46,146,4,Chemistry,43
+Student_46,146,4,Computer Science,78
+Student_46,146,4,English,74
+Student_47,147,1,Math,46
+Student_47,147,1,Physics,94
+Student_47,147,1,Chemistry,94
+Student_47,147,1,Computer Science,87
+Student_47,147,1,English,40
+Student_47,147,2,Math,100
+Student_47,147,2,Physics,89
+Student_47,147,2,Chemistry,57
+Student_47,147,2,Computer Science,80
+Student_47,147,2,English,89
+Student_47,147,3,Math,76
+Student_47,147,3,Physics,95
+Student_47,147,3,Chemistry,59
+Student_47,147,3,Computer Science,92
+Student_47,147,3,English,73
+Student_47,147,4,Math,40
+Student_47,147,4,Physics,99
+Student_47,147,4,Chemistry,70
+Student_47,147,4,Computer Science,53
+Student_47,147,4,English,70
+Student_48,148,1,Math,73
+Student_48,148,1,Physics,79
+Student_48,148,1,Chemistry,63
+Student_48,148,1,Computer Science,98
+Student_48,148,1,English,61
+Student_48,148,2,Math,96
+Student_48,148,2,Physics,97
+Student_48,148,2,Chemistry,74
+Student_48,148,2,Computer Science,44
+Student_48,148,2,English,96
+Student_48,148,3,Math,45
+Student_48,148,3,Physics,62
+Student_48,148,3,Chemistry,94
+Student_48,148,3,Computer Science,51
+Student_48,148,3,English,77
+Student_48,148,4,Math,52
+Student_48,148,4,Physics,91
+Student_48,148,4,Chemistry,78
+Student_48,148,4,Computer Science,51
+Student_48,148,4,English,50
+Student_49,149,1,Math,49
+Student_49,149,1,Physics,50
+Student_49,149,1,Chemistry,96
+Student_49,149,1,Computer Science,73
+Student_49,149,1,English,57
+Student_49,149,2,Math,84
+Student_49,149,2,Physics,68
+Student_49,149,2,Chemistry,40
+Student_49,149,2,Computer Science,96
+Student_49,149,2,English,72
+Student_49,149,3,Math,94
+Student_49,149,3,Physics,94
+Student_49,149,3,Chemistry,85
+Student_49,149,3,Computer Science,99
+Student_49,149,3,English,89
+Student_49,149,4,Math,43
+Student_49,149,4,Physics,52
+Student_49,149,4,Chemistry,44
+Student_49,149,4,Computer Science,52
+Student_49,149,4,English,76
+Student_50,150,1,Math,58
+Student_50,150,1,Physics,66
+Student_50,150,1,Chemistry,62
+Student_50,150,1,Computer Science,68
+Student_50,150,1,English,99
+Student_50,150,2,Math,64
+Student_50,150,2,Physics,85
+Student_50,150,2,Chemistry,81
+Student_50,150,2,Computer Science,56
+Student_50,150,2,English,91
+Student_50,150,3,Math,60
+Student_50,150,3,Physics,45
+Student_50,150,3,Chemistry,80
+Student_50,150,3,Computer Science,87
+Student_50,150,3,English,99
+Student_50,150,4,Math,93
+Student_50,150,4,Physics,72
+Student_50,150,4,Chemistry,43
+Student_50,150,4,Computer Science,68
+Student_50,150,4,English,89
+Student_51,151,1,Math,41
+Student_51,151,1,Physics,73
+Student_51,151,1,Chemistry,17
+Student_51,151,1,Computer Science,65
+Student_51,151,1,English,17
+Student_51,151,2,Math,65
+Student_51,151,2,Physics,87
+Student_51,151,2,Chemistry,49
+Student_51,151,2,Computer Science,80
+Student_51,151,2,English,80
+Student_51,151,3,Math,45
+Student_51,151,3,Physics,17
+Student_51,151,3,Chemistry,37
+Student_51,151,3,Computer Science,22
+Student_51,151,3,English,71
+Student_51,151,4,Math,42
+Student_51,151,4,Physics,77
+Student_51,151,4,Chemistry,49
+Student_51,151,4,Computer Science,72
+Student_51,151,4,English,43
+Student_52,152,1,Math,53
+Student_52,152,1,Physics,56
+Student_52,152,1,Chemistry,82
+Student_52,152,1,Computer Science,100
+Student_52,152,1,English,86
+Student_52,152,2,Math,52
+Student_52,152,2,Physics,74
+Student_52,152,2,Chemistry,67
+Student_52,152,2,Computer Science,49
+Student_52,152,2,English,81
+Student_52,152,3,Math,33
+Student_52,152,3,Physics,89
+Student_52,152,3,Chemistry,37
+Student_52,152,3,Computer Science,59
+Student_52,152,3,English,89
+Student_52,152,4,Math,70
+Student_52,152,4,Physics,79
+Student_52,152,4,Chemistry,92
+Student_52,152,4,Computer Science,43
+Student_52,152,4,English,81
+Student_53,153,1,Math,86
+Student_53,153,1,Physics,65
+Student_53,153,1,Chemistry,40
+Student_53,153,1,Computer Science,44
+Student_53,153,1,English,86
+Student_53,153,2,Math,55
+Student_53,153,2,Physics,92
+Student_53,153,2,Chemistry,55
+Student_53,153,2,Computer Science,77
+Student_53,153,2,English,54
+Student_53,153,3,Math,63
+Student_53,153,3,Physics,95
+Student_53,153,3,Chemistry,100
+Student_53,153,3,Computer Science,78
+Student_53,153,3,English,67
+Student_53,153,4,Math,86
+Student_53,153,4,Physics,48
+Student_53,153,4,Chemistry,52
+Student_53,153,4,Computer Science,68
+Student_53,153,4,English,93
+Student_54,154,1,Math,69
+Student_54,154,1,Physics,73
+Student_54,154,1,Chemistry,60
+Student_54,154,1,Computer Science,71
+Student_54,154,1,English,54
+Student_54,154,2,Math,98
+Student_54,154,2,Physics,45
+Student_54,154,2,Chemistry,68
+Student_54,154,2,Computer Science,91
+Student_54,154,2,English,77
+Student_54,154,3,Math,76
+Student_54,154,3,Physics,74
+Student_54,154,3,Chemistry,68
+Student_54,154,3,Computer Science,60
+Student_54,154,3,English,72
+Student_54,154,4,Math,40
+Student_54,154,4,Physics,98
+Student_54,154,4,Chemistry,77
+Student_54,154,4,Computer Science,53
+Student_54,154,4,English,60
+Student_55,155,1,Math,93
+Student_55,155,1,Physics,64
+Student_55,155,1,Chemistry,94
+Student_55,155,1,Computer Science,55
+Student_55,155,1,English,88
+Student_55,155,2,Math,50
+Student_55,155,2,Physics,81
+Student_55,155,2,Chemistry,90
+Student_55,155,2,Computer Science,45
+Student_55,155,2,English,55
+Student_55,155,3,Math,60
+Student_55,155,3,Physics,42
+Student_55,155,3,Chemistry,99
+Student_55,155,3,Computer Science,93
+Student_55,155,3,English,82
+Student_55,155,4,Math,62
+Student_55,155,4,Physics,47
+Student_55,155,4,Chemistry,79
+Student_55,155,4,Computer Science,90
+Student_55,155,4,English,86
+Student_56,156,1,Math,95
+Student_56,156,1,Physics,64
+Student_56,156,1,Chemistry,94
+Student_56,156,1,Computer Science,74
+Student_56,156,1,English,72
+Student_56,156,2,Math,53
+Student_56,156,2,Physics,92
+Student_56,156,2,Chemistry,65
+Student_56,156,2,Computer Science,99
+Student_56,156,2,English,76
+Student_56,156,3,Math,56
+Student_56,156,3,Physics,87
+Student_56,156,3,Chemistry,52
+Student_56,156,3,Computer Science,96
+Student_56,156,3,English,84
+Student_56,156,4,Math,51
+Student_56,156,4,Physics,64
+Student_56,156,4,Chemistry,53
+Student_56,156,4,Computer Science,62
+Student_56,156,4,English,100
+Student_57,157,1,Math,83
+Student_57,157,1,Physics,99
+Student_57,157,1,Chemistry,41
+Student_57,157,1,Computer Science,59
+Student_57,157,1,English,77
+Student_57,157,2,Math,43
+Student_57,157,2,Physics,43
+Student_57,157,2,Chemistry,83
+Student_57,157,2,Computer Science,40
+Student_57,157,2,English,66
+Student_57,157,3,Math,68
+Student_57,157,3,Physics,79
+Student_57,157,3,Chemistry,16
+Student_57,157,3,Computer Science,56
+Student_57,157,3,English,55
+Student_57,157,4,Math,19
+Student_57,157,4,Physics,98
+Student_57,157,4,Chemistry,94
+Student_57,157,4,Computer Science,48
+Student_57,157,4,English,45
+Student_58,158,1,Math,89
+Student_58,158,1,Physics,50
+Student_58,158,1,Chemistry,78
+Student_58,158,1,Computer Science,57
+Student_58,158,1,English,73
+Student_58,158,2,Math,49
+Student_58,158,2,Physics,79
+Student_58,158,2,Chemistry,95
+Student_58,158,2,Computer Science,53
+Student_58,158,2,English,51
+Student_58,158,3,Math,93
+Student_58,158,3,Physics,95
+Student_58,158,3,Chemistry,81
+Student_58,158,3,Computer Science,100
+Student_58,158,3,English,76
+Student_58,158,4,Math,91
+Student_58,158,4,Physics,52
+Student_58,158,4,Chemistry,56
+Student_58,158,4,Computer Science,52
+Student_58,158,4,English,98
+Student_59,159,1,Math,44
+Student_59,159,1,Physics,78
+Student_59,159,1,Chemistry,72
+Student_59,159,1,Computer Science,69
+Student_59,159,1,English,52
+Student_59,159,2,Math,41
+Student_59,159,2,Physics,40
+Student_59,159,2,Chemistry,61
+Student_59,159,2,Computer Science,63
+Student_59,159,2,English,81
+Student_59,159,3,Math,56
+Student_59,159,3,Physics,99
+Student_59,159,3,Chemistry,95
+Student_59,159,3,Computer Science,98
+Student_59,159,3,English,71
+Student_59,159,4,Math,54
+Student_59,159,4,Physics,85
+Student_59,159,4,Chemistry,86
+Student_59,159,4,Computer Science,68
+Student_59,159,4,English,62
+Student_60,160,1,Math,42
+Student_60,160,1,Physics,64
+Student_60,160,1,Chemistry,90
+Student_60,160,1,Computer Science,75
+Student_60,160,1,English,72
+Student_60,160,2,Math,77
+Student_60,160,2,Physics,90
+Student_60,160,2,Chemistry,57
+Student_60,160,2,Computer Science,91
+Student_60,160,2,English,47
+Student_60,160,3,Math,59
+Student_60,160,3,Physics,76
+Student_60,160,3,Chemistry,89
+Student_60,160,3,Computer Science,78
+Student_60,160,3,English,76
+Student_60,160,4,Math,68
+Student_60,160,4,Physics,63
+Student_60,160,4,Chemistry,46
+Student_60,160,4,Computer Science,93
+Student_60,160,4,English,95

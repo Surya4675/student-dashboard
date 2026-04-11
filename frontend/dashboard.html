@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard-header">
+    <h1>Student Analytics Dashboard</h1>
+    <a href="index.html" class="back-btn">Upload New Data</a>
+</div>
+
+
+
+<div class="dashboard-grid">
+    <!-- Chart: Subjects -->
+    <div class="card">
+        <h2>Subject Performance</h2>
+        <canvas id="subjectChart"></canvas>
+    </div>
+
+    <!-- Chart: Trend -->
+    <div class="card">
+        <h2>Semester Trend</h2>
+        <canvas id="trendChart"></canvas>
+    </div>
+
+    <!-- Chart: Pass/Fail -->
+    <div class="card">
+        <h2>Pass/Fail Ratio</h2>
+        <div style="width: 250px; margin: auto;">
+            <canvas id="passFailChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Topper List -->
+    <div class="card">
+        <h2>Top 5 Toppers</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody id="topperBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Search Feature -->
+    <div class="card search-card">
+        <h2>Student Search</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter Roll No (e.g. 101)">
+            <button onclick="searchStudent()">Search</button>
+        </div>
+        <div id="searchResults" style="display:none; text-align: left; margin-top:20px;"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

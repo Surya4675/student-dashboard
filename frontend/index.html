@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Upload Student CSV</h2>
+    <input type="file" id="file" accept=".csv">
+    <button onclick="uploadFile()">Upload</button>
+</div>
+
+<script>
+async function uploadFile() {
+    let file = document.getElementById("file").files[0];
+
+    if (!file) {
+        alert("Please select a file first");
+        return;
+    }
+
+    if (!file.name.endsWith(".csv")) {
+        alert("Invalid file format. Please upload a .csv file.");
+        return;
+    }
+
+    let formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        let response = await fetch("http://127.0.0.1:8000/upload", {
+            method: "POST",
+            body: formData
+        });
+
+        let data = await response.json();
+
+        if (response.ok && !data.error) {
+            alert("Upload Successful! Redirecting to Dashboard...");
+            window.location.href = "dashboard.html";
+        } else {
+            alert("Upload failed: " + (data.error || "Unknown error"));
+        }
+    } catch (e) {
+        alert("Upload failed! Make sure the backend server is running.");
+    }
+}
+</script>
+
+</body>
+</html>
