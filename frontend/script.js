@@ -22,7 +22,7 @@ Chart.defaults.color = "#64748b";
 
 async function fetchDashboardData() {
     try {
-        let res = await fetch("http://127.0.0.1:8000/dashboard-data");
+        let res = await fetch(API_BASE_URL + "/dashboard-data");
         dashboardData = await res.json();
         
         if(dashboardData.error){

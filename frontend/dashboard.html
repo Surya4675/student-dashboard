@@ -39,7 +39,7 @@
                 <p class="subtitle">Enterprise Student Dashboard for PSG College of Technology</p>
             </div>
             <div class="header-actions">
-                <button class="btn btn-primary premium-shadow" onclick="window.open('http://127.0.0.1:8000/export/full-report/pdf', '_blank')">
+                <button class="btn btn-primary premium-shadow" onclick="window.open(API_BASE_URL + '/export/full-report/pdf', '_blank')">
                     <i class="fas fa-download"></i> Download Full Report
                 </button>
             </div>
@@ -246,6 +246,7 @@
         </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

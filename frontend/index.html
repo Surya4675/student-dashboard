@@ -22,6 +22,7 @@
     </div>
 </div>
 
+<script src="config.js"></script>
 <script>
 async function uploadFile() {
     let file = document.getElementById("file").files[0];
@@ -40,7 +41,7 @@ async function uploadFile() {
     formData.append("file", file);
 
     try {
-        let response = await fetch("http://127.0.0.1:8000/upload", {
+        let response = await fetch(API_BASE_URL + "/upload", {
             method: "POST",
             body: formData
         });
