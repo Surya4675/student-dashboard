@@ -12,6 +12,13 @@ This system ingests raw academic CSV data and dynamically transforms it into act
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20(Python)-blue)
 ![Frontend](https://img.shields.io/badge/Frontend-Vanilla%20JS%20%2B%20CSS-orange)
 
+## 🌐 Live Demonstration
+
+The application is fully hosted online for immediate access! You can view the deployed architecture here:
+* **Live Next-Gen Dashboard:** [https://psgct-student-dashboard.netlify.app](https://psgct-student-dashboard.netlify.app)
+* **Live Backend Service:** Hosted on Render
+* **FastAPI Swagger Docs:** [https://psgct-student-dashboard.onrender.com/docs](https://psgct-student-dashboard.onrender.com/docs)
+
 ## 🚀 Key Enterprise Features
 
 * **Single Payload Architecture:** The backend aggregates heavy calculations (CGPA, Rankings, Trend Metrics) and delivers everything cleanly in a single `/dashboard-data` network call. This minimizes server strain and allows the UI to render flawlessly.
