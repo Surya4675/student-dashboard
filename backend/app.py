@@ -269,10 +269,10 @@ def full_export_pdf():
         </div>
         
         <h2>Subject Difficulty Index</h2>
-        {df.groupby('subject')['marks'].mean().reset_index().rename(columns={{'marks':'Average Score'}}).sort_values('Average Score').round(2).to_html(index=False)}
+        {df.groupby('subject')['marks'].mean().reset_index().rename(columns={'marks':'Average Score'}).sort_values('Average Score').round(2).to_html(index=False)}
         
         <h2>Top 15 Scholars Ranking</h2>
-        {cgpa.sort_values(by='grade', ascending=False).head(15).rename(columns={{'grade':'CGPA', 'roll': 'Roll No', 'name': 'Name'}}).round(2).to_html(index=False)}
+        {cgpa.sort_values(by='grade', ascending=False).head(15).rename(columns={'grade':'CGPA', 'roll': 'Roll No', 'name': 'Name'}).round(2).to_html(index=False)}
     </body>
     </html>
     """
