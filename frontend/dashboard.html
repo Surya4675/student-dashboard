@@ -1,66 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Analytics Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSG Tech | Enterprise Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="light-mode">
 
-<div class="dashboard-header">
-    <h1>Student Analytics Dashboard</h1>
-    <a href="index.html" class="back-btn">Upload New Data</a>
-</div>
+    <!-- Sidebar / Nav -->
+    <nav class="sidebar">
+        <div class="logo">
+            <h2 style="display: flex; align-items: center; gap: 10px;">
+                <img src="logo.png" alt="PSGCT" style="width: 35px; height: 35px; border-radius: 50%;"> 
+                PSG Tech
+            </h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="javascript:void(0)" onclick="toggleCompareSidebar()"><i class="fas fa-balance-scale"></i> Compare Module</a></li>
+            <li><a href="index.html"><i class="fas fa-upload"></i> Upload Data</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <button id="themeToggleBtn"><i class="fas fa-moon"></i> Dark Mode</button>
+        </div>
+    </nav>
 
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Header -->
+        <header class="top-header">
+            <div class="header-text">
+                <h1>PSG Academic Analytics</h1>
+                <p class="subtitle">Enterprise Student Dashboard for PSG College of Technology</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-primary premium-shadow" onclick="window.open('http://127.0.0.1:8000/export/full-report/pdf', '_blank')">
+                    <i class="fas fa-download"></i> Download Full Report
+                </button>
+            </div>
+        </header>
 
+        <!-- Dynamic Filters -->
+        <section class="filter-section card glass-card">
+            <div class="filter-header">
+                <h3><i class="fas fa-sliders-h"></i> Data Filters</h3>
+                <button class="btn btn-text" onclick="resetFilters()">Reset</button>
+            </div>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Semester</label>
+                    <select id="semFilter" onchange="applyFilters()">
+                        <option value="all">All Semesters</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Subject Focus</label>
+                    <select id="subFilter" onchange="applyFilters()">
+                        <option value="all">All Subjects</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Student Search</label>
+                    <select id="studentFilter" onchange="applyFilters()">
+                        <option value="all">All Students</option>
+                    </select>
+                </div>
+            </div>
+        </section>
 
-<div class="dashboard-grid">
-    <!-- Chart: Subjects -->
-    <div class="card">
-        <h2>Subject Performance</h2>
-        <canvas id="subjectChart"></canvas>
+        <!-- Alerts Section -->
+        <section class="alerts-section" id="alertsContainer">
+            <!-- Populated via JS -->
+        </section>
+
+        <!-- TABS NAV -->
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="switchTab('tab-overview')"><i class="fas fa-home"></i> Executive Overview</button>
+            <button class="tab-btn" onclick="switchTab('tab-subjects')"><i class="fas fa-book-open"></i> Subject Metrics</button>
+            <button class="tab-btn" onclick="switchTab('tab-students')"><i class="fas fa-graduation-cap"></i> Student Rankings</button>
+        </div>
+
+        <!-- TAB 1: OVERVIEW -->
+        <div id="tab-overview" class="tab-content active">
+            <!-- KPI Cards -->
+            <section class="kpi-grid">
+                <div class="kpi-card stat-blue">
+                    <div class="kpi-content">
+                        <p>Total Students</p>
+                        <h2 id="kpiTotalStudents">--</h2>
+                        <span class="trend positive"><i class="fas fa-arrow-up"></i> Data Synced</span>
+                    </div>
+                    <div class="kpi-icon"><i class="fas fa-users"></i></div>
+                </div>
+                <div class="kpi-card stat-purple">
+                    <div class="kpi-content">
+                        <p>Average CGPA</p>
+                        <h2 id="kpiAvgCgpa">--</h2>
+                        <span class="trend neutral">Class Average</span>
+                    </div>
+                    <div class="kpi-icon"><i class="fas fa-chart-pie"></i></div>
+                </div>
+                <div class="kpi-card stat-green">
+                    <div class="kpi-content">
+                        <p>Pass Rate</p>
+                        <h2 id="kpiPassRate">--</h2>
+                        <span class="trend positive"><i class="fas fa-check"></i> Target Met</span>
+                    </div>
+                    <div class="kpi-icon"><i class="fas fa-shield-alt"></i></div>
+                </div>
+                <div class="kpi-card stat-orange">
+                    <div class="kpi-content">
+                        <p>Top Performer</p>
+                        <h2 id="kpiTopPerformer">--</h2>
+                        <span class="trend highlight"><i class="fas fa-star"></i> Rank #1</span>
+                    </div>
+                    <div class="kpi-icon"><i class="fas fa-trophy"></i></div>
+                </div>
+            </section>
+
+            <section class="charts-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="chart-card">
+                    <h3>Semester Trend Analysis</h3>
+                    <div class="chart-container">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Pass/Fail Interactive Analysis</h3>
+                    <div class="interactive-pf-container" id="interactivePfContainer" style="height: 320px;">
+                        <!-- Custom component compiled by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 2: SUBJECTS -->
+        <div id="tab-subjects" class="tab-content">
+            <section class="charts-grid" style="grid-template-columns: 2fr 1fr;">
+                <div class="chart-card">
+                    <h3>Subject Performance</h3>
+                    <div class="chart-container" style="height: 380px;">
+                        <canvas id="subjectChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Subject Difficulty Index</h3>
+                    <p class="subtitle" style="margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">Lower average dictates higher difficulty.</p>
+                    <div class="difficulty-list" id="difficultyList" style="max-height: 340px;">
+                        <!-- Populated via JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 3: STUDENTS -->
+        <div id="tab-students" class="tab-content">
+            <section class="bottom-grid" style="grid-template-columns: 1fr;">
+                <div class="card table-card" style="margin-bottom: 0;">
+                    <h3>Top Scholastic Rankings</h3>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Roll No</th>
+                                    <th>CGPA</th>
+                                    <th>Percentile</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rankingBody">
+                                <!-- Populated via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </div>
 
-    <!-- Chart: Trend -->
-    <div class="card">
-        <h2>Semester Trend</h2>
-        <canvas id="trendChart"></canvas>
-    </div>
-
-    <!-- Chart: Pass/Fail -->
-    <div class="card">
-        <h2>Pass/Fail Ratio</h2>
-        <div style="width: 250px; margin: auto;">
-            <canvas id="passFailChart"></canvas>
+    <!-- Interactive Pass/Fail Details Modal/Popup Placeholder -->
+    <div id="passFailDetails" class="alert-banner alert-warning" style="display:none; position: fixed; bottom: 20px; left: 280px; width: 350px; z-index: 100; box-shadow: var(--shadow-lg);">
+        <div>
+            <h4 style="margin: 0; color: #991b1b;"><i class="fas fa-exclamation-circle"></i> Failed Students Action List</h4>
+            <div id="failedStudentList" style="margin-top: 8px; font-size: 13px;"></div>
+            <button class="btn btn-text" style="padding: 0; margin-top: 10px; color: #991b1b; text-decoration: underline;" onclick="document.getElementById('passFailDetails').style.display='none'">Close</button>
         </div>
     </div>
 
-    <!-- Topper List -->
-    <div class="card">
-        <h2>Top 5 Toppers</h2>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Roll No</th>
-                    <th>CGPA</th>
-                </tr>
-            </thead>
-            <tbody id="topperBody"></tbody>
-        </table>
-    </div>
-
-    <!-- Search Feature -->
-    <div class="card search-card">
-        <h2>Student Search</h2>
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Enter Roll No (e.g. 101)">
-            <button onclick="searchStudent()">Search</button>
+    <!-- Right Sidebar for Comparison -->
+    <div id="compareSidebar" class="right-sidebar">
+        <div class="sidebar-header">
+            <h3>Student Performance Comparison</h3>
+            <button class="btn btn-text" onclick="toggleCompareSidebar()" style="font-size: 20px;"><i class="fas fa-times"></i></button>
         </div>
-        <div id="searchResults" style="display:none; text-align: left; margin-top:20px;"></div>
+        
+        <div class="compare-card">
+            <p class="subtitle" style="margin-bottom: 20px;">Select two students to deeply analyze their academic paths, view SGPA patterns, and compare exact subject marks.</p>
+            
+            <div class="compare-controls">
+                <select id="compareStudentA"></select>
+                <div class="vs">VS</div>
+                <select id="compareStudentB"></select>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 25px;" onclick="compareStudents()">Run Analysis</button>
+
+            <div id="compareResults" class="compare-results" style="display: none;">
+                <div class="compare-stats">
+                    <div class="student-stat">
+                        <h4 id="compNameA">Student A</h4>
+                        <div class="stat-box" style="margin-bottom: 10px;">CGPA: <span id="compCgpaA">--</span></div>
+                    </div>
+                    <div class="student-stat right">
+                        <h4 id="compNameB">Student B</h4>
+                        <div class="stat-box" style="margin-bottom: 10px;">CGPA: <span id="compCgpaB">--</span></div>
+                    </div>
+                </div>
+
+                <!-- SGPA Table -->
+                <div class="sgpa-container" style="margin-bottom: 25px;">
+                    <h5 style="margin-bottom: 10px; color: var(--text-muted); font-size: 12px; text-transform: uppercase;">Semester SGPA Comparison</h5>
+                    <table class="enterprise-table" style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                                <th>Sem</th>
+                                <th>Student A SGPA</th>
+                                <th>Student B SGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sgpaCompareBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <h5 style="margin-bottom: 10px; color: var(--text-muted); font-size: 12px; text-transform: uppercase;">Subject Gap Analysis</h5>
+                <div class="chart-container" style="height: 280px; width: 100%; max-width: 100%;">
+                    <canvas id="compareChart"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

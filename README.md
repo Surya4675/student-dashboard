@@ -1,90 +1,53 @@
-# Student Performance Dashboard
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/PSG_College_of_Technology_logo.png" width="120" alt="PSGCT Logo">
+</div>
 
-A modern, comprehensive web application built for tracking and analyzing student performance. This dashboard allows educators and administrators to upload CSV data containing student grades and dynamically visualize performance trends, subject-wise statistics, and class toppers.
+# PSG Tech Academic Analytics Dashboard 📊🎓
 
-## 🚀 Features
+An enterprise-grade, high-performance web dashboard originally developed for the **Enterprise Computing using FullStack Hackathon** at **PSG College of Technology**.
 
-- **CSV Data Upload:** Effortlessly upload and parse student grades.
-- **Performance Analytics:** View essential subject-wise performance metrics (mean, max, min).
-- **Toppers List:** Automatically calculates SGPA & CGPA to rank the top 5 students.
-- **Pass/Fail Ratios:** Quickly visualize the passing vs. failing rate of the entire class.
-- **Semester Trends:** Track average student scores across different semesters.
-- **Detailed Student Search:** Look up an individual student's details, SGPA history, and current CGPA using their Roll Number.
-- **Export Capabilities:** Download individual student transcripts as cleanly formatted PDF and CSV files seamlessly from the dashboard.
+This system ingests raw academic CSV data and dynamically transforms it into actionable, real-time insights, enabling administrators and professors to make data-driven decisions regarding student progress.
 
-## 🛠️ Tech Stack
+![Enterprise Level Dashboard](https://img.shields.io/badge/Status-Enterprise%20Ready-success)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20(Python)-blue)
+![Frontend](https://img.shields.io/badge/Frontend-Vanilla%20JS%20%2B%20CSS-orange)
 
-- **Frontend:** HTML, CSS, JavaScript (Vanilla)
-- **Backend:** Python, FastAPI, Uvicorn [ASGI (Asynchronous Server Gateway Interface) Server]
-- **Data Processing:** Pandas
-- **PDF Generation:** xhtml2pdf
-- **Database:** SQLite3
+## 🚀 Key Enterprise Features
 
-## 📋 Prerequisites
+* **Single Payload Architecture:** The backend aggregates heavy calculations (CGPA, Rankings, Trend Metrics) and delivers everything cleanly in a single `/dashboard-data` network call. This minimizes server strain and allows the UI to render flawlessly.
+* **Student Comparison Module:** Compare two scholastic profiles head-to-head. Features dynamic SGPA calculations, winner tracking (🏆), and an interactive **Subject Gap Analysis** Radar Chart.
+* **Interactive Diagnostic Visuals:** Features custom DOM-injected Pass/Fail progress trackers and deeply dynamic subject metric bars that change color (Green/Orange/Red) based on the class average curve.
+* **Executive Tabbed Interface:** Organizes massive amounts of data into clean, digestible tabs (Executive Overview, Subject Metrics, Student Rankings) avoiding cognitive overload.
+* **Automated PDF Generation:** Built-in PDF exporter creates comprehensive physical Executive Reports straight from the Python backend.
 
-To run this project locally, ensure you have the following installed:
-- [Python 3.8+](https://www.python.org/downloads/)
+## 💻 Technology Stack
+* **Frontend UI/UX:** HTML5, Modern CSS (Glassmorphism, Variables), Vanilla JavaScript.
+* **Data Visualization:** Chart.js (Spider, Bar, Trend, Pie).
+* **Backend:** Python + FastAPI (Asynchronous execution).
+* **Data Engineering:** Pandas & NumPy.
+* **Database:** SQLite3.
+* **Reporting:** xhtml2pdf.
 
----
+## ⚙️ How to Run Locally
 
-## ⚙️ Setup & Installation
+1. **Clone the repository.**
+2. **Setup the Backend Server:**
+   Ensure you have Python installed.
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   python -m uvicorn app:app --reload --port 8000
+   ```
+3. **Launch the Frontend:**
+   You do not need a NodeJS server! Simply navigate to the `frontend` directory and double-click `index.html` to load it in your browser.
+4. **Ingest Data:**
+   Upload your student dataset (`.csv`) and let the application generate your metrics.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Surya4675/student-dashboard.git
-cd student-dashboard
-```
-
-### 2. Backend Environment Setup
-Navigate into the backend directory:
-```bash
-cd backend
-```
-
-*(Optional but highly recommended)*: Create and activate a isolated virtual environment:
-```bash
-# On Windows
-python -m venv venv
-venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Install the required Python dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Start the Backend Server
-Once the dependencies are installed, you can start the API. 
-```bash
-python -m uvicorn app:app --reload --port 8000
-```
-> **Tip for Windows users:** You can also simply double-click the `start.bat` file located inside the backend folder to automatically boot the server!
-
-The API will now be successfully running on `http://127.0.0.1:8000`.
-
-### 4. Start the Frontend Application
-Since the frontend uses vanilla web technologies, there is no complicated build step required!
-- Open the `frontend/dashboard.html` file in any modern web browser (e.g., Chrome, Edge, Safari).
-- *Alternatively, use a tool like the **Live Server** VSCode extension for hot-reloading.*
+## 📈 Scalability Roadmap (For Production Hosting)
+Currently designed as a monolithic MVP for the hackathon. To scale this for the entire University workload, the architecture is prepared for the following upgrades:
+* **Database Upgrade:** Migrate `students.db` (SQLite) to **PostgreSQL** or **AWS RDS** to handle concurrent writes without locking.
+* **Caching Layer:** Implement **Redis** to cache the Pandas DataFrame computational outputs (like percentiles and rankings) to save backend computing cycles.
+* **Containerization:** Deploy the FastAPI server using **Docker** alongside **Nginx/Load Balancer** to handle thousands of requests seamlessly.
 
 ---
-
-## 🔌 API Reference (FastAPI)
-The backend provides a fully functional REST API. Once the server is running, you can also view auto-generated documentation by visiting `http://127.0.0.1:8000/docs`.
-
-### Core Endpoints:
-- `POST /upload` - Accepts a `.csv` file upload containing roll, name, semester, subject, and marks.
-- `GET /subjects` - Returns statistical breakdown (min, max, mean) per subject.
-- `GET /toppers` - Returns the top 5 students based on calculated CGPA.
-- `GET /passfail` - Calculates pass/fail split (Passing criteria: >=40 in all subjcets).
-- `GET /trend` - Evaluates average mark trends per semester.
-- `GET /student/{roll}` - Gets a detailed aggregated report for a specific student.
-- `GET /student/{roll}/export` - Exports an individual student's detailed marks as a CSV file.
-- `GET /student/{roll}/export/pdf` - Exports an individual student's detailed marks as a formatted PDF.
-
-## 📝 License
-This project is licensed under the MIT License.
+**Prepared specifically for the PSG College of Technology Enterprise Hackathon.**

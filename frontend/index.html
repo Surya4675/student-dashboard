@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload CSV</title>
+    <title>PSG Tech | Data Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<div class="container">
-    <h2>Upload Student CSV</h2>
-    <input type="file" id="file" accept=".csv">
-    <button onclick="uploadFile()">Upload</button>
+<body class="light-mode">
+<div class="main-content" style="margin-left: 0; width: 100%; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <div class="card glass-card" style="width: 500px; text-align: center; padding: 40px;">
+        <div class="card-header" style="margin-bottom: 30px;">
+            <img src="logo.png" alt="PSGCT Logo" style="width: 70px; margin-bottom: 10px;">
+            <h1 style="color: var(--primary); margin-bottom: 5px;">PSG Tech</h1>
+            <p class="subtitle">Academic Data Portal &bull; PSG College of Technology</p>
+        </div>
+        <input type="file" id="file" accept=".csv" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 20px;">
+        <button class="btn btn-primary" style="width: 100%; justify-content: center;" onclick="uploadFile()">Process & Sync Data</button>
+        <div style="margin-top: 20px;">
+            <a href="dashboard.html" style="color: var(--primary); text-decoration: none; font-size: 14px;">Go direct to Dashboard</a>
+        </div>
+    </div>
 </div>
 
 <script>
